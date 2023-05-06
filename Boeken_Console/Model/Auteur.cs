@@ -8,14 +8,15 @@ namespace Boeken_Console.Model
 {
     public class Auteur
     {
-        #region Constructor
+        #region Constructor voor Auteur
         public Auteur(string naam, string emailContact)
         {
             Naam = naam;
             EmailContact = emailContact;
         }
         #endregion
-        #region Properties
+
+        #region Properties voor Auteur
         public int Id { get; set; }
         public string Naam { get; set; }
         public string EmailContact { get; set; }

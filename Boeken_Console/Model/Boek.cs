@@ -8,6 +8,7 @@ namespace Boeken_Console.Model
 {
     public class Boek
     {
+        #region Constructors voor Boek
         public Boek(string titel, string beschrijving)
         {
             Titel = titel;
@@ -19,11 +20,14 @@ namespace Boeken_Console.Model
             Uitgeverij = uitgeverij;
             Auteurs = auteurs;
         }
+        #endregion
 
+        #region Properties voor Boek
         public int Id { get; set; }
         public string Titel { get; set; }
         public string Beschrijving { get; set; }
         public Uitgeverij Uitgeverij { get; set; }
         public List<Auteur> Auteurs { get; set; } = new List<Auteur>();
+        #endregion
     }
 }

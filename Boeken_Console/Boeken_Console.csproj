@@ -161,6 +161,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="data\BoekContext.cs" />
     <Compile Include="Model\Auteur.cs" />
     <Compile Include="Model\Boek.cs" />
     <Compile Include="Model\Uitgeverij.cs" />
