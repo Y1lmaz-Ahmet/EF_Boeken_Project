@@ -10,7 +10,7 @@ namespace Boeken_Console.data
 {
     public class BoekContext : DbContext
     {
-        //deze klasse geven we aan welke objecten/tabellen we gebruiken door middel van DbSets. 
+        // in deze klasse geven we aan welke objecten/tabellen we gebruiken door middel van DbSets. 
         #region Het gebruik van DbSet om met EF datatabellen te creëren.
         public DbSet<Boek> Boeken { get; set; }
         public DbSet<Auteur> Auteurs { get; set; }

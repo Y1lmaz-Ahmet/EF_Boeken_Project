@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Boeken_Console.Manager;
+using Boeken_Console.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -27,6 +29,16 @@ namespace Boeken_Console
             //Om nu het datamodel effectief aan te maken in de databank geef je
             //het commando Update-Database in het Package Manager Consolevenster.
 
+
+            //-------- testen --------
+            Console.WriteLine("welcome!");
+            Uitgeverij u1 = new Uitgeverij("Lannoo", "Kasteelstraat 97,8700 Tielt", "Info@Lannoo.be");
+            Auteur a1 = new Auteur("Fieke Van Der Gucht", "Fieke@hotmail.be");
+            Boek b1 = new Boek("Het froot Vlaams VloekBoek", "hier komt normaal gezien de beschrijving!!!");
+            b1.Uitgeverij = u1;
+            b1.Auteurs.Add(a1);
+            BoekManager BM = new BoekManager();
+            BM.VoegBoekToe(b1);
         }
     }
 }
